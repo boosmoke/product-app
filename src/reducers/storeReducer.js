@@ -13,10 +13,9 @@ export default function (state = INITIAL_STATE, action) {
       };
 
     case types.FILTER_PRODUCTS:
-    return {
-      ...state, products: [...state.products.sort((a, b) => a.price - b.price)]
-    };
-
+      return {
+        ...state, products: [...state.products.sort((a, b) => action.payload === 'isAvailable' ? ((a[action.payload] === b[action.payload])? 0 : a[action.payload]? -1 : 1) : action.payload !== 'price' ? a[action.payload].localeCompare(b[action.payload].split(' ')[0]) : a[action.payload] - b[action.payload])]
+      };
     case types.ADD_TO_CART:
     return {
       ...state, cart: [action.payload, ...state.cart]

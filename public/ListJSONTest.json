@@ -17,7 +17,7 @@
 		"hasFullDescription": true,
 		"brand": "Mary B Decorative Art",
 		"productUrl": "https://shop.com/Octopus+Ocean+Animal+Bookend+Pair+Resin-1686371538-p+.xhtml",
-		"isAvailable": true,
+		"isAvailable": false,
 		"maxOrderQuantity": 500,
 		"mediumImageURL": "https://img.shop.com/Image/240000/249600/249626/products/1686371538__175x175__.jpg"
 	}, {
@@ -140,7 +140,7 @@
 		"price": 40.00,
 		"currency": "$",
 		"description": "Cover made of durable material.  Insert filled with eco-friendly recycled fiber. Spot cleaning recommended.      For residents of California - California Proposition 65 Warning: This product contains one or more chemicals known to the State of...",
-		"hasFullDescription": true,
+		"hasFullDescription": false,
 		"brand": "Zeckos",
 		"productUrl": "https://shop.com/Lava+46928+999+W+Octopus+20x17+Outdoor+Pillow-1598861340-p+.xhtml",
 		"isAvailable": true,

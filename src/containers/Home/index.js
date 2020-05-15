@@ -10,7 +10,7 @@ import './styles.css';
 class Home extends Component {
 
   state = {
-    inlineCart: true,
+    inlineCart: false,
   }
 
   componentDidMount() {
