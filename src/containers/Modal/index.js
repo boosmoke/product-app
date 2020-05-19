@@ -9,7 +9,10 @@ export default class index extends Component {
       <div className="modal cart">
         <h1>Cart</h1>
         <button className="close-cart-btn" onClick={()=> {closeCart()}}>X</button>
-        {cart.length > 0 && cart.map((product, index)=> <CartItem key={index} product={product} removeFromCart={removeFromCart}/>)}
+        <div className="cart__products">
+          {cart.length > 0 && cart.map((product, index)=> <CartItem key={index} product={product} removeFromCart={removeFromCart}/>)}
+        </div>
+        <div className="checkout">Checkout</div>
       </div>
     )
   }

@@ -6,17 +6,18 @@ export default class index extends Component {
     const { filterProducts } = this.props;
     return (
       <div className="filters__bar">
+        <h3>Filters</h3>
         <button className="filter-btn" onClick={()=> {filterProducts('price')}}>
-          Filter By Price
+          Price
         </button>
         <button className="filter-btn" onClick={()=> {filterProducts('caption')}}>
-          Filter By Title
+          Title
         </button>
         <button className="filter-btn" onClick={()=> {filterProducts('brand')}}>
-          Filter By Brand
+          Brand
         </button>
         <button className="filter-btn" onClick={()=> {filterProducts('isAvailable')}}>
-          Filter By Availability
+          Availability
         </button>
       </div>
     )

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
 import storeReducer from './storeReducer'
 
-const triviaApp = combineReducers({
+const productApp = combineReducers({
   storeReducer
 });
 
-export default triviaApp
+export default productApp

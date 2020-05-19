@@ -36,9 +36,11 @@ class Home extends Component {
       this.setState({inlineCart : !this.state.inlineCart})
     }
     return (
-      <div className="home">
+      <div className={"home " + (this.state.inlineCart ? 'hidden' : '')}>
         <button onClick={()=>{toggleCart()}}className="cart-btn">
-        {cart.length}</button>
+          <i className="fa fa-shopping-cart"></i>
+          {cart.length}
+        </button>
         {this.state.inlineCart && <Modal closeCart={closeCart} removeFromCart={actions.removeFromCart} cart={cart}/>}
         <ProductFilters filterProducts={actions.filterProducts}/>
         <Products addToCart={actions.addToCart} products={products}/>
